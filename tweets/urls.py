@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import home_view, tweet_detail_view
+from .views import *
 
 
 urlpatterns = [
-	path('<int:pk>', home_view, name='home_view'),
+	path('', TweetListView.as_view(), name='tweet_list_view'),
 	path('tweets/<int:pk>', tweet_detail_view, name='tweet_detail_view')
 ]
