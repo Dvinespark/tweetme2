@@ -1,2 +1,5 @@
 /venv
 .code-workspace
+.sqlite3
+/__pycache__
+settings.py
